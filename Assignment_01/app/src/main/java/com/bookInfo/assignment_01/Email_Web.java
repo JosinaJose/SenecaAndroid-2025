@@ -59,12 +59,13 @@ public class Email_Web extends AppCompatActivity {
 
                 // If URL field is empty, search for the book
                 if (url.isEmpty()) {
-                    if (book != null) {
-                        searchBookOnWeb();
-                    } else {
-                        Toast.makeText(Email_Web.this, "Enter a web address or book info", Toast.LENGTH_SHORT).show();
+
+
+                        Toast.makeText(Email_Web.this, "Please enter a web address", Toast.LENGTH_SHORT).show();
+                        return;
                     }
-                } else {
+
+                 else {
                     // Open the custom URL entered by user
                     openWebPage(url);
                 }
@@ -108,21 +109,6 @@ public class Email_Web extends AppCompatActivity {
         }
     }
 
-    public void searchBookOnWeb() {
-        if (book != null) {
-            String searchQuery = book.getTitle() + " " + book.getAuthor();
-            String url = "https://www.google.com/search?q=" + Uri.encode(searchQuery);
-
-            Intent webIntent = new Intent(Intent.ACTION_VIEW);
-            webIntent.setData(Uri.parse(url));
-
-            if (webIntent.resolveActivity(getPackageManager()) != null) {
-                startActivity(webIntent);
-            } else {
-                Toast.makeText(this, "No browser app found", Toast.LENGTH_SHORT).show();
-            }
-        }
-    }
 
     // Lifecycle logs (optional for assignment)
     @Override
@@ -147,6 +133,7 @@ public class Email_Web extends AppCompatActivity {
         outState.putString("subject", editTextSubject.getText().toString());
         outState.putString("content", editTextContent.getText().toString());
         outState.putString("to_email", editTextToEmail.getText().toString());
+        outState.putString("web search", webSearch.getText().toString());
         super.onSaveInstanceState(outState);
     }
 
