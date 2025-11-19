@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Multi Activity</string>
+    <string name="heading">Multi-Activity App</string>
+    <string name="title">Enter Book Info</string>
+    <string name="book_title">Book Title:</string>
+    <string name="book_title_text">Book Title</string>
+    <string name="author_name">Author Name:</string>
+    <string name="author_name_Text">Author Name</string>
+    <string name="month_year">Month/Year:</string>
+    <string name="mm_yyyy">MM/YYYY</string>
+    <string name="open_date_picker">Open date picker</string>
+    <string name="nextButton">View Book Info</string>
+    <string name="titlelabel">Title of the book:</string>
+    <string name="authorLabel">Author of the book:</string>
+    <string name="dateLabel">Year of release:</string>
+    <string name="book_details">Book Details</string>
+    <string name="book_photo">Book photo</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="nextBtn2">Next</string>
+    <string name="subject">Enter Subject</string>
+    <string name="content">Enter the content</string>
+    <string name="to_email">Enter the email Address</string>
+    <string name="send_email">Send Email</string>
+    <string name="search">Search a web address</string>
+    <string name="searchbtn">Search</string>
+    <string name="websearch">Web Search</string>
+    <string name="emailTitle">Send Book Information</string>
+</resources>

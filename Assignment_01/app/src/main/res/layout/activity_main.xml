@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- ============================================ -->
+    <!-- HEADER SECTION -->
+    <!-- ============================================ -->
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/pastel_cream"
+        android:fontFamily="@font/fuzzy_bubbles_bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/heading"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/geologica"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Heading" />
+
+    <!-- ============================================ -->
+    <!-- BOOK TITLE SECTION -->
+    <!-- ============================================ -->
+
+    <TextView
+        android:id="@+id/bookTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto_slab_semibold"
+        android:text="@string/book_title"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <EditText
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="no"
+        android:fontFamily="@font/roboto_slab_medium"
+        android:gravity="center"
+        android:hint="@string/book_title_text"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#78909C"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/bookTitleLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bookTitleLabel" />
+
+    <!-- ============================================ -->
+    <!-- AUTHOR SECTION -->
+    <!-- ============================================ -->
+
+    <TextView
+        android:id="@+id/authorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/roboto_slab_semibold"
+        android:text="@string/author_name"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+    <EditText
+        android:id="@+id/authorText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="no"
+        android:fontFamily="@font/roboto_slab_medium"
+        android:gravity="center"
+        android:hint="@string/author_name_Text"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#78909C"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/authorLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/authorLabel" />
+
+    <!-- ============================================ -->
+    <!-- DATE SECTION -->
+    <!-- ============================================ -->
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/roboto_slab_semibold"
+        android:text="@string/month_year"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/authorText" />
+
+    <EditText
+        android:id="@+id/dateText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="no"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:fontFamily="@font/roboto_slab_medium"
+        android:gravity="center"
+        android:hint="@string/mm_yyyy"
+        android:inputType="none"
+        android:minHeight="48dp"
+        android:textColorHint="#78909C"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/dateLabel"
+        app:layout_constraintEnd_toStartOf="@id/dateDropdown"
+        app:layout_constraintStart_toEndOf="@id/dateLabel" />
+
+    <ImageButton
+        android:id="@+id/dateDropdown"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/outline_arrow_drop_down_24"
+        android:contentDescription="@string/open_date_picker"
+        app:layout_constraintBottom_toBottomOf="@id/dateText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dateText" />
+
+    <!-- ============================================ -->
+    <!-- ACTION BUTTON -->
+    <!-- ============================================ -->
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/pastel_green"
+        android:fontFamily="@font/roboto_slab_semibold"
+        android:paddingStart="48dp"
+        android:paddingEnd="48dp"
+        android:text="@string/nextButton"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateText"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".BookData">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/pastel_cream"
+        android:fontFamily="@font/fuzzy_bubbles_bold"
+        android:gravity="center"
+        android:text="@string/book_details"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Title Display -->
+
+    <!-- Author Display -->
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="42dp"
+        android:text="@string/titlelabel"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Heading" />
+    <TextView
+        android:id="@+id/authorLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="42dp"
+        android:text="@string/authorLabel"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleLabel" />
+
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="42dp"
+        android:text="@string/dateLabel"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/authorLabel" />
+
+
+    <!-- Date Display -->
+
+    <!-- Photo Section -->
+    <ImageView
+        android:id="@+id/bookImageView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/light_gray"
+        android:contentDescription="@string/book_photo"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateLabel" />
+
+    <!-- Buttons -->
+
+    <Button
+        android:id="@+id/takePhotoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/pastel_green"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="@string/take_photo"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/nextButton"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bookImageView"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/pastel_green"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="@string/nextBtn2"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/takePhotoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/takePhotoButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

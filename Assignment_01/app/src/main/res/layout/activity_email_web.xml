@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".Email_Web">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/emailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="14dp"
+        android:text="@string/emailTitle"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/fuzzy_bubbles_bold"
+        android:textColor="@color/black"
+        android:background="@color/pastel_cream" />
+
+    <!-- Subject -->
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/subject"
+        android:minHeight="48dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Content -->
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="14dp" />
+
+    <!-- To Email -->
+    <EditText
+        android:id="@+id/to_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/to_email"
+        android:minHeight="48dp"
+        android:layout_marginBottom="14dp" />
+
+    <!-- Send Email Button -->
+    <Button
+        android:id="@+id/sendEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_email"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_slab_semibold"
+        android:backgroundTint="@color/pastel_green"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Web Search Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/websearch"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@color/pastel_cream"
+        android:fontFamily="@font/fuzzy_bubbles_bold"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Search Input -->
+    <EditText
+        android:id="@+id/searchInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search"
+        android:minHeight="48dp"
+        android:fontFamily="@font/roboto_slab_semibold"
+        android:layout_marginBottom="14dp" />
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/pastel_green"
+        android:text="@string/searchbtn"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>
