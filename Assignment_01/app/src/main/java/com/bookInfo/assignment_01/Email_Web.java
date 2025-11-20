@@ -74,10 +74,18 @@ public class Email_Web extends AppCompatActivity {
     }
 
     private void displayBookSummary() {
-        String summary = "Book Information\n" +
-                "Title of the book: : " + book.getTitle() + "\n" +
-                "Author of the book: " + book.getAuthor() + "\n" +
-                "Published: " + book.getDate();
+        String greeting = "Dear,\n\n";
+        String emailIntro = "I would like to suggest the book:\n\n";
+
+        String summary = greeting +
+                emailIntro +
+                "Book Information\n" +
+                "----------------\n" +
+                "Title: " + book.getTitle() + "\n" +
+                "Author: " + book.getAuthor() + "\n" +
+                "Published: " + book.getDate() + "\n\n" +
+                "Thank you,\n" +
+                "Josina Jose";
 
         editTextContent.setText(summary);
         editTextSubject.setText("Book Info: " + book.getTitle());
