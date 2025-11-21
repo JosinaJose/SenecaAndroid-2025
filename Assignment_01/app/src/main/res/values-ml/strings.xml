@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Multi Activity</string>
+    <string name="open_date_picker">തീയതി പിക്കർ തുറക്കുക</string>
+    <string name="nextButton">പുസ്തക വിവരങ്ങൾ കാണുക</string>
+    <string name="titlelabel">പുസ്തകത്തിന്റെ പേര്</string>
+    <string name="authorLabel">പുസ്തകത്തിന്റെ രചയിതാവ്</string>
+    <string name="dateLabel">പുറത്തിറങ്ങിയ വർഷം</string>
+    <string name="book_details">പുസ്തക വിശദാംശങ്ങൾ</string>
+    <string name="book_photo">പുസ്തക ഫോട്ടോ</string>
+    <string name="take_photo">ഫോട്ടോ എടുക്കൂ</string>
+    <string name="nextBtn2">അടുത്തത്</string>
+    <string name="subject">വിഷയം നൽകുക</string>
+    <string name="content">ഉള്ളടക്കം നൽകുക</string>
+    <string name="to_email">ഇമെയിൽ വിലാസം നൽകുക</string>
+    <string name="send_email">ഇമെയിൽ അയയ്ക്കുക</string>
+    <string name="search">ഒരു വെബ് വിലാസം തിരയുക</string>
+    <string name="searchbtn">തിരയൽ</string>
+    <string name="websearch">വെബ് തിരയൽ</string>
+    <string name="emailTitle">പുസ്തക വിവരങ്ങൾ അയയ്ക്കുക</string>
+    <string name="heading">മൾട്ടി ആക്റ്റിവിറ്റി ആപ്പ്</string>
+    <string name="title">പുസ്തക വിവരങ്ങൾ നൽകുക</string>
+    <string name="book_title">പുസ്തകത്തിന്റെ പേര്</string>
+    <string name="book_title_text">പുസ്തകത്തിന്റെ പേര്</string>
+    <string name="author_name">രചയിതാവിന്റെ പേര്</string>
+    <string name="author_name_Text">രചയിതാവിന്റെ പേര്</string>
+    <string name="month_year">മാസം/വർഷം</string>
+</resources>

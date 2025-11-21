@@ -14,7 +14,7 @@
         android:id="@+id/Heading"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="23dp"
         android:background="@color/pastel_cream"
         android:fontFamily="@font/fuzzy_bubbles_bold"
         android:gravity="center"

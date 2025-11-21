@@ -80,7 +80,7 @@ public class Email_Web extends AppCompatActivity {
         String summary = greeting +
                 emailIntro +
                 "Book Information\n" +
-                "----------------\n" +
+                "-----------------------------\n" +
                 "Title: " + book.getTitle() + "\n" +
                 "Author: " + book.getAuthor() + "\n" +
                 "Published: " + book.getDate() + "\n\n" +

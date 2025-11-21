@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <!-- 🌸 PASTEL COLORS -->
+    <!--  PASTEL COLORS -->
     <color name="pastel_pink">#FFD1DC</color>
     <color name="pastel_blue">#AEC6CF</color>
     <color name="pastel_green">#77DD77</color>
@@ -15,7 +15,7 @@
     <color name="pastel_gray">#D3D3D3</color>
     <color name="pastel_cream">#FFFDD0</color>
 
-    <!-- 🎨 BASIC COLORS -->
+    <!--  BASIC COLORS -->
 
     <color name="gray">#808080</color>
     <color name="dark_gray">#505050</color>
@@ -32,7 +32,7 @@
     <color name="cyan">#00BCD4</color>
     <color name="pink">#E91E63</color>
 
-    <!-- 🌈 MATERIAL DESIGN SHADES -->
+    <!--  MATERIAL DESIGN SHADES -->
     <color name="md_red_100">#FFCDD2</color>
     <color name="md_red_200">#EF9A9A</color>
     <color name="md_red_500">#F44336</color>
@@ -56,7 +56,7 @@
     <color name="md_brown_100">#D7CCC8</color>
     <color name="md_blue_gray_100">#CFD8DC</color>
 
-    <!-- 💧 NEUTRAL / BACKGROUND COLORS -->
+    <!--  NEUTRAL / BACKGROUND COLORS -->
     <color name="background_light">#FAFAFA</color>
     <color name="background_medium">#F5F5F5</color>
     <color name="background_dark">#EEEEEE</color>
