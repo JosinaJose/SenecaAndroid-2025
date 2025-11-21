@@ -78,6 +78,15 @@ public class BookData extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        if (savedInstanceState != null) {
+            photoBitmap = savedInstanceState.getParcelable("photo");
+            if (photoBitmap != null) {
+                bookImageView.setImageBitmap(photoBitmap);
+                bookImageView.setVisibility(View.VISIBLE);
+            }
+        }
+
     }
 
     // Check camera permission before taking photo
