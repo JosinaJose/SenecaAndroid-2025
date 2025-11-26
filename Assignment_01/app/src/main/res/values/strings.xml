@@ -25,4 +25,6 @@
     <string name="searchbtn">Search</string>
     <string name="websearch">Web Search</string>
     <string name="emailTitle">Send Book Information</string>
+    <string name="view_books_button">View Books</string>
+    <string name="back">Back</string>
 </resources>

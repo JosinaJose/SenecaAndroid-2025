@@ -35,13 +35,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-<<<<<<< HEAD
-        android:fontFamily="@font/andada"
-        android:padding="5dp"
-        android:background="@color/pastel_cream"
-=======
-        android:fontFamily= "@font/andada"
->>>>>>> origin/main
         android:gravity="center"
         android:text="@string/title"
         android:textSize="18sp"
@@ -51,6 +44,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Heading" />
+
+
 
     <!-- ============================================ -->
     <!-- BOOK TITLE SECTION -->
@@ -193,4 +188,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dateText"
         app:layout_constraintVertical_bias="0.319" />
+
+    <Button
+        android:id="@+id/viewBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pastel_green"
+        android:fontFamily="@font/roboto_slab_semibold"
+        android:paddingStart="48dp"
+        android:paddingEnd="48dp"
+        android:text="@string/view_books_button"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateText"
+        app:layout_constraintVertical_bias="0.523" />
 </androidx.constraintlayout.widget.ConstraintLayout>

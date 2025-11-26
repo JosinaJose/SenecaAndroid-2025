@@ -1,6 +1,5 @@
 package com.bookInfo.assignment_01;
 
-
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +10,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -23,21 +23,21 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText titleText, authorText, dateText;
     private ImageButton dateDropdown;
-    private Button nextButton;
-
-
+    private Button nextButton, viewBooksButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-// Initialize views
+
+        // Initialize views
         titleText = findViewById(R.id.titleText);
         authorText = findViewById(R.id.authorText);
         dateText = findViewById(R.id.dateText);
         dateDropdown = findViewById(R.id.dateDropdown);
         nextButton = findViewById(R.id.nextButton);
+        viewBooksButton = findViewById(R.id.viewBooks);
 
         // Date dropdown click listener
         dateDropdown.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 showMonthYearPicker();
             }
         });
+
         // Next button click listener
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,12 +72,26 @@ public class MainActivity extends AppCompatActivity {
                 // Create Books object
                 Books book = new Books(title, author, date);
 
+                // Save the book to BookManager
+                BookManager.getInstance().addBook(book);
+                Toast.makeText(MainActivity.this, "Book saved!", Toast.LENGTH_SHORT).show();
+
                 // Start BookData activity with book object
                 Intent intent = new Intent(MainActivity.this, BookData.class);
                 intent.putExtra("book", book);
                 startActivity(intent);
             }
         });
+
+        // View Books button click listener
+        viewBooksButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BookListActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -84,8 +99,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
-    // show date picker- MM/YYYY and display on the text field
+    // Show date picker - MM/YYYY and display on the text field
     public void showMonthYearPicker() {
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
@@ -117,30 +131,31 @@ public class MainActivity extends AppCompatActivity {
 
         dpd.show();
     }
+
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d("lifecycle","Main Activity - on Resume");
+        Log.d("lifecycle", "Main Activity - on Resume");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d("lifecycle","Main Activity - on Destroy");
+        Log.d("lifecycle", "Main Activity - on Destroy");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d("lifecycle","Main Activity - on Pause");
+        Log.d("lifecycle", "Main Activity - on Pause");
     }
+
     @Override
-    protected void onSaveInstanceState(Bundle outState){
+    protected void onSaveInstanceState(Bundle outState) {
         outState.putString("Book Title", titleText.getText().toString());
         outState.putString("Author", authorText.getText().toString());
         outState.putString("Date", dateText.getText().toString());
         super.onSaveInstanceState(outState);
-        Log.d("lifecycle","Main Activity - in onSaveInstanceState");
-
+        Log.d("lifecycle", "Main Activity - in onSaveInstanceState");
     }
 }
