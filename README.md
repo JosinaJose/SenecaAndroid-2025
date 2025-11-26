@@ -23,4 +23,3 @@ A multi-activity Android application built in Java that handles book data entry,
 - onSaveInstanceState() implemented in all activities
 - Restores input fields, email content, camera image, and search text on rotation
 
-## Demo
