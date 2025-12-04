@@ -1,25 +1,24 @@
-# Book Info Manager – Android App
 
-A multi-activity Android application built in Java that handles book data entry, inter-activity communication, camera usage, and common Android implicit intents.
+# Assignments at Seneca College – Android Development
 
-## Features
+This repository contains Android development assignments completed at **Seneca College, Canada**.  
+Technologies used include **Java**, **Kotlin**, **Jetpack Compose**, **MVVM architecture**, and Android best practices.
 
-### Activity 1 – Book Input
-- Enter title, author, and publication date (MM/YYYY)  
-- Custom DatePickerDialog  
-- Pass data using a Parcelable object via explicit intent  
+---
 
-### Activity 2 – Book Details
-- Display received book data  
-- Capture photo using ACTION_IMAGE_CAPTURE  
-- Runtime camera permission handling  
-- Navigate to next activity via explicit intent  
+## Assignments
 
-### Activity 3 – Email & Web Intents
-- Generate and send an email using ACTION_SENDTO  
-- Open a user-entered web URL using ACTION_VIEW
+### 1. Assignment_01 – Book Info Manager
+- **Folder:** `Assignment_01`
+- **Description:** Multi-activity Android app built in Java to manage book data entry, inter-activity communication, camera usage, and implicit intents.  
+- [See detailed README](Assignment_01/README.md)
 
-## State Management
-- onSaveInstanceState() implemented in all activities
-- Restores input fields, email content, camera image, and search text on rotation
+### 2. Assignment_02 – Cash Register App
+- **Folder:** `Assignment_02`
+- **Description:** POS Cash Register App built with Jetpack Compose and Kotlin. Includes product selection, quantity keypad, stock validation, total calculation, BUY button, and purchase history.  
+- [See detailed README](Assignment_02/README.md)
+
+---
+
+
 
