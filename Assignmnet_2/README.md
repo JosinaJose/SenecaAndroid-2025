@@ -21,11 +21,11 @@ The app allows users to select products, enter quantities, make purchases, and v
 ## Screenshots
 
 **Cash Register Screen**  
-![Cash Register](<img width="492" height="832" alt="image" src="https://github.com/user-attachments/assets/75525b3e-854e-4668-a8ac-8d411efe58e1" />
-.png)
+![Cash Register](<img width="350" height="600" alt="image" src="https://github.com/user-attachments/assets/75525b3e-854e-4668-a8ac-8d411efe58e1" />
+)
 
 **Purchase History Screen**  
-![Purchase History](<img width="498" height="845" alt="image" src="https://github.com/user-attachments/assets/01169a93-bda1-441d-9fd8-11ce6c749a21" />
+![Purchase History](<img width="350" height="600" alt="image" src="https://github.com/user-attachments/assets/01169a93-bda1-441d-9fd8-11ce6c749a21" />
 )
 
 
