@@ -1,25 +1,32 @@
-# Book Info Manager – Android App
+# Cash Register App (Jetpack Compose)
 
-A multi-activity Android application built in Java that handles book data entry, inter-activity communication, camera usage, and common Android implicit intents.
+A simple **POS (Point of Sale) Cash Register App** built with **Kotlin** and **Jetpack Compose**.  
+The app allows users to select products, enter quantities, make purchases, and view purchase history, all with a clean and responsive UI.
+
+---
 
 ## Features
 
-### Activity 1 – Book Input
-- Enter title, author, and publication date (MM/YYYY)  
-- Custom DatePickerDialog  
-- Pass data using a Parcelable object via explicit intent  
+- Product selection from a predefined list
+- Dynamic quantity entry via a keypad
+- Total amount calculation
+- Stock validation (cannot purchase more than available)
+- BUY button with validation messages
+- Persistent purchase history with timestamps
+- Top bar with navigation and back button
+- Works with **MVVM architecture** using `ViewModel` and `mutableStateOf` for state management
 
-### Activity 2 – Book Details
-- Display received book data  
-- Capture photo using ACTION_IMAGE_CAPTURE  
-- Runtime camera permission handling  
-- Navigate to next activity via explicit intent  
+---
 
-### Activity 3 – Email & Web Intents
-- Generate and send an email using ACTION_SENDTO  
-- Open a user-entered web URL using ACTION_VIEW
+## Screenshots
 
-## State Management
-- onSaveInstanceState() implemented in all activities
-- Restores input fields, email content, camera image, and search text on rotation
+**Cash Register Screen**  
+![Cash Register](<img width="492" height="832" alt="image" src="https://github.com/user-attachments/assets/75525b3e-854e-4668-a8ac-8d411efe58e1" />
+.png)
+
+**Purchase History Screen**  
+![Purchase History](<img width="498" height="845" alt="image" src="https://github.com/user-attachments/assets/01169a93-bda1-441d-9fd8-11ce6c749a21" />
+)
+
+
 
